@@ -1,5 +1,6 @@
 ---
 title: Search tweak for ID's
+date: 2017-07-19
 ---
 Take a look at this file:
 
@@ -11,9 +12,7 @@ Take a look at this file:
 ```
 
 It's part of a search log from Sitecore. If you ever looked at indexing you know that item ID's in Lucene don't have dashes.
-In log you can see there is a template with ID 7e49b0aa5eba4a02852c4744e2288ac2. So imagine you want to see this template and you 
-paste this value into Content Editor search box and it doesn't work. ARRR. It doesn't work. Why? Because this kind of string; although it's a valid guid; is not recognized as Item ID. My first reaction to this situation was to use online tool which changed format with dashes but after few times I had enough.
-I'm making baby steps in Sitecore world and this looked like good opportunity to learn something new. 
+In log you can see there is a template with ID 7e49b0aa5eba4a02852c4744e2288ac2. So imagine you want to see this template and you paste this value into Content Editor search box and it doesn't work. ARRR. It doesn't work. Why? Because this kind of string; although it's a valid guid; is not recognized as Item ID. My first solution was to use online tool which changed format with dashes but after few times I had enough. I'm making baby steps in Sitecore world and this looked like good opportunity to learn something new. 
 
 Turn's out it was super easy to do. After finding search pipeline it was a matter of minutes to write a processor which handles such case.
 
