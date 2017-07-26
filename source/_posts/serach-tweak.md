@@ -1,6 +1,7 @@
 ---
 title: Search tweak for ID's
 date: 2017-07-19
+tags: [ Sitecore, search, pipeline ]
 ---
 Take a look at this file:
 
