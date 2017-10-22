@@ -14,13 +14,13 @@ When you create an item you will se this window:
 Which clearly says that you will select Base template not a template. As in this image when you create a template suggested base template is 'Standard template'. Only difference between a Template and Standard Template is that second one has extra Workflow template in Base template section. Question I'm asking myself is: why Standard Template Base Template has values which are already in Template. It doesn't have any effect on anything but at the same time it's a bit redundant.
 
 So how can we find items that use specific template. First thing that comes to ming is a Query or a Fast Query which will look like this:
-```
+```csharp
 Sitecore.Factory.GetDatabase("master").SelectItems("/sitecore/content//*[@@templatename = 'Foo']")
 
 ```
 This will quite ok, but not in all situations. When Bar template inherits from Foo ( or in other words: uses Foo as a Base template ) query won't return items which use Bar template.  Luckuly when we have a template we can find it's descendants. From there it's easy to get all templates using Foo.
 
-```
+```csharp
 var fooId = ID.Parse("{6669DC16-F106-44B5-96BE-7A31AE82B5B5}")
 
 var master = Factory.GetDatabase("master");
