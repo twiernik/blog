@@ -1,6 +1,6 @@
 ---
 title: Experience Editor calls with exceptions
-date: 2017-10-19
+date: 2017-10-30
 tags: [ Sitecore, Experience Editor, Exceptions ]
 ---
 
