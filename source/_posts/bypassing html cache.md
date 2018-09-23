@@ -1,5 +1,5 @@
 ---
-title: bypassing html cache
+title: Bypassing html cache
 date: 2018-09-23
 tags: [ Sitecore, caching, tricks ]
 intro: How anyone can bypass your html cache

@@ -7,7 +7,7 @@ title: Tomek & Sitecore
 subtitle:
 description:
 author: Tomasz Wiernik
-language:
+language: en
 timezone:
 
 # URL
@@ -87,3 +87,11 @@ deploy:
 
 
 disqus_shortname: tomekwie
+
+about : {
+  name : "Tomasz Wiernik",
+  intro1 : "Sitecore Engineer at Cognifide",
+  linkedin : "https://www.linkedin.com/in/tomasz-wiernik-a96a9b128",
+  email : "first letter of my name + surname on gmail",
+  github : "https://github.com/twiernik",
+}
