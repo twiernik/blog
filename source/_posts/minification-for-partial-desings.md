@@ -25,4 +25,4 @@ public virtual AssetConfiguration ReadConfiguration()
     Item designItem = ServiceLocator.ServiceProvider.GetService<IPresentationContext>().DesignItem;
     ....
 ```
-In order to 'fix' the problem we have to replace `GetService<IPresentationContext>().DesignItem`  with `GetService<IPresentationContext>().PageDesignsItem` and rest of the code accoringly. After that minification was not performed while editing Partial Designs.
+In order to 'fix' the problem we have to replace `GetService<IPresentationContext>().DesignItem`  with `GetService<IPresentationContext>().PageDesignsItem` and rest of the code accoringly. After that minification was not performed while editing Partial Designs. [Gist with implementation.](https://gist.github.com/twiernik/bef94db2f8b421b605d4a94b7a38ebed)
